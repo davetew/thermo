@@ -9,7 +9,7 @@ setup(
     # Needed to actually package something
     packages=['thermoUtils'],
     # Needed for dependencies
-    install_requires=['cantera', 'numpy'],
+    install_requires=['cantera', 'numpy','pint'],
     # *strongly* suggested for sharing
     version='0.1',
     # The license can be anything you like
