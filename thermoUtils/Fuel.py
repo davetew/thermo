@@ -1,5 +1,15 @@
 """Define fuel property classes"""
 
+# Import the required packages: cantera (chemical reactions) & pint (units)
+import cantera as ct
+
+import pint
+ureg = pint.UnitRegistry()
+Q_ = ureg.Quantity
+
+# Define a currency dimension with usd ($US) as the base unit
+ureg.define('usd = [Currency]')
+
 class Fuel:
     """Fuel specification class"""
     def __init__(self, phase_definition=None, 
